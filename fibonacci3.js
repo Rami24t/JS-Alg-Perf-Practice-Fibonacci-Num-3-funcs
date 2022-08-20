@@ -1,7 +1,7 @@
 'use strict'
 //        1 1 2 3 4 5 1 2  3  4  5  1   2   3       
 // calls = 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377
-let n = 33;
+let n = 44;
 const t1 = performance.now();
 var call = {
     fibonacci: function(n) {
@@ -45,7 +45,7 @@ var call3 = {
         }
         if (n == 2)
             return 1;
-        return (this.fibonacci(n - 1) * (2 * Math.cos(Math.PI / 5))).toFixed(0);
+        return +(this.fibonacci(n - 1) * (2 * Math.cos(Math.PI / 5))).toFixed(0);
     }
 }
 for (let i = 0; i < n; i++)
