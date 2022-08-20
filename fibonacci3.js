@@ -3,7 +3,7 @@
 // calls = 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377
 let n = 19;
 const t1 = performance.now();
-var yourself = {
+var call = {
     fibonacci: function(n) {
         if (n === 0 || n === 1) {
             return n;
@@ -14,11 +14,11 @@ var yourself = {
     }
 };
 for (let i = 0; i < n; i++)
-    console.log(yourself.fibonacci(i));
+    console.log(call.fibonacci(i));
 const t2 = performance.now();
 
 const t3 = performance.now();
-var yourself2 = {
+var call2 = {
     fibonacci: function(n) {
         if (n === 0 || n === 1)
             return n;
@@ -34,20 +34,22 @@ var yourself2 = {
     }
 }
 for (let i = 0; i < n; i++)
-    console.log(yourself2.fibonacci(i));
+    console.log(call2.fibonacci(i));
 const t4 = performance.now();
 
 const t5 = performance.now();
-var yourself3 = {
+var call3 = {
     fibonacci: function(n) {
         if (n === 0 || n === 1) {
             return n;
         }
+        if (n == 2)
+            return 1;
         return (this.fibonacci(n - 1) * (2 * Math.cos(Math.PI / 5))).toFixed(0);
     }
 }
-for (let i = 0; i < 9; i++)
-    console.log(yourself3.fibonacci(i));
+for (let i = 0; i < n; i++)
+    console.log(call3.fibonacci(i));
 const t6 = performance.now();
 
 
