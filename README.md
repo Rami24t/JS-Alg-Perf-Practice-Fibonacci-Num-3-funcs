@@ -6,7 +6,7 @@ that are of significantly improved performance over the given method.
 
 This is my solution to a challenge exercise I found on codewars.
 
-The challenge was to code a better performing function that a fibonacci number finder method that they provided. 
+The challenge was to code a better performing function than a fibonacci number finder method that they provided. 
 
 I wrote two better performing methods as a solution to the challenge.
 
