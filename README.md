@@ -2,7 +2,7 @@
 3 Fibonacci num functions + perf testing in js
 
 Given a fibonacci number finder method, I coded two new methods/algs (in two other objects)
-that are of significantly improved performance (about 2 times faster) than the given method.
+that are of significantly improved performance over the given method.
 
 This is my solution to a challenge exercise I found on codewars.
 
